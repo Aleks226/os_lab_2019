@@ -24,6 +24,6 @@ cd ..
 git add ./hello/empty
 git add ./hello/newhello.c
 git add ./script.sh
-git commit -m "добавлен empty и newhello.c"
+git commit -m "добавлены empty и newhello.c"
 git push
 cd ..
