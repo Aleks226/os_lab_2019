@@ -23,7 +23,7 @@ bash ./path.sh
 touch average.sh # написал скрипт
 touch numbers.txt
 touch generate.sh # написал скрипт
-./generate.sh
+bash ./generate.sh
 ./average.sh < ./numbers.txt
 
 # end
