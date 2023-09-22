@@ -38,6 +38,6 @@ git add ./src/path.sh
 git add ./src/average.sh
 git add ./src/generate.sh
 git add ./script.sh
-git commit -m "добавлен average.sh и generate.sh"
+git commit -m "добавлены empty, path.sh, average.sh и generate.sh"
 git push
 cd ..
