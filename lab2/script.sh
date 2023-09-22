@@ -38,6 +38,8 @@ mkdir tests &> /dev/null
 cp revert_string/revert_string.h tests/revert_string.h
 gcc -c tests/tests.c -o tests/tests.o
 gcc tests/tests.o -lcunit -Lbin/shared -lrevert -o test
+sudo mv bin/shared/librevert.so /usr/lib
+sudo chmod 755 /usr/lib/librevert.so
 ./test
 
 # end
