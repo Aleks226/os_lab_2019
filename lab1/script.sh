@@ -17,7 +17,7 @@ rm file.txt &> /dev/null
 chmod u+x ./hello.sh
 ./hello.sh
 touch path.sh # написал скрипт
-./path.sh
+bash ./path.sh
 
 # 4
 touch average.sh # написал скрипт
