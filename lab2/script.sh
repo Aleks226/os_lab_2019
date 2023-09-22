@@ -38,6 +38,7 @@ mkdir tests &> /dev/null
 cp revert_string/revert_string.h tests/revert_string.h
 gcc -c tests/tests.c -o tests/tests.o
 gcc tests/tests.o -lcunit -Lbin/shared -lrevert -o test
+./test
 
 # end
 echo "Конец"
