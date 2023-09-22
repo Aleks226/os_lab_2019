@@ -22,6 +22,7 @@ touch generate.sh # написал скрипт
 ./average.sh < ./numbers.txt
 # end
 cd ..
+git add ./src/empty
 git add ./src/path.sh
 git add ./src/average.sh
 git add ./src/generate.sh
