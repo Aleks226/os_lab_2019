@@ -16,6 +16,7 @@ sh ../../update.sh
 # 4
 echo "Задание №4"
 gcc newhello.c -o hello_world
+./hello_world
 
 # end
 echo "Конец"
