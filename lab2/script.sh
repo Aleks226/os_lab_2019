@@ -35,7 +35,7 @@ LD_LIBRARY_PATH=$(pwd)/bin/shared bin/use-shared-library "qwe123"
 # 4
 echo "Задание №4"
 mkdir tests &> /dev/null
-cp evert_string/revert_string.h tests/revert_string.h
+cp revert_string/revert_string.h tests/revert_string.h
 gcc -c tests/tests.c -o tests/tests.o
 gcc tests/tests.o -lcunit -Lbin/shared -lrevert -o test
 
