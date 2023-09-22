@@ -11,15 +11,15 @@ grep "cake" cake_rhymes.txt > with_cake.txt
 rm file.txt &> /dev/null
 # 3
 chmod u+x ./hello.sh
-bash ./hello.sh
+./hello.sh
 touch path.sh # написал скрипт
-bash ./path.sh
+./path.sh
 # 4
 touch average.sh # написал скрипт
 touch numbers.txt
 touch generate.sh # написал скрипт
-bash ./generate.sh
-bash ./average.sh < ./numbers.txt
+./generate.sh
+./average.sh < ./numbers.txt
 # end
 cd ..
 git add ./src/average.sh
