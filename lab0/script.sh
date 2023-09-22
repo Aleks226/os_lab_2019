@@ -2,7 +2,7 @@ clear
 cd lab0
 
 # 2
-mkdir hello
+mkdir hello &> /dev/null
 cd hello
 touch empty
 cp ../src/hello.c hello.c
