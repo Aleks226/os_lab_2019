@@ -1,3 +1,4 @@
+clear
 cd lab1
 # 1
 cd src
