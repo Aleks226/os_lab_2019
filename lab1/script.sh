@@ -24,7 +24,7 @@ touch average.sh # написал скрипт
 touch numbers.txt
 touch generate.sh # написал скрипт
 bash ./generate.sh
-./average.sh < ./numbers.txt
+bash ./average.sh < ./numbers.txt
 
 # end
 cd ..
