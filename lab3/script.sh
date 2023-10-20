@@ -17,11 +17,11 @@ echo "Задание №4"
 make all
 ./sequential_m 2 8
 ./parallel_m --seed "2" --array_size "8" --pnum "4"
-make clean
 
 # 5
 echo "Задание №5"
 ./start_m
+make clean
 
 # end
 echo "Конец"
