@@ -20,8 +20,8 @@ make all
 
 # 5
 echo "Задание №5"
-./start_m --seed "2" --array_size "8"
-#make clean
+./start_m 2 8
+make clean
 
 # end
 echo "Конец"
