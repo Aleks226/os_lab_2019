@@ -11,7 +11,7 @@ sequential : utils.o find_min_max.o utils.h find_min_max.h	# 2
 parallel : utils.o find_min_max.o utils.h find_min_max.h	# 2
 	$(CC) -o parallel utils.o find_min_max.o parallel_min_max.c $(CFLAGS)
 
-start: utils.o find_min_max.o utils.h find_min_max.h			# 2
+start: utils.o find_min_max.o utils.h find_min_max.h		# 2
 	$(CC) -o start utils.o find_min_max.o start.c $(CFLAGS)
 
 utils.o : utils.h
