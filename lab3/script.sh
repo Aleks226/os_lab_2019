@@ -21,7 +21,7 @@ make clean
 
 # 5
 echo "Задание №5"
-./parallel_m --seed "2" --array_size "8" --pnum "4"
+./start_m
 
 # end
 echo "Конец"
