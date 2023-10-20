@@ -4,7 +4,7 @@ cd lab3/src
 # 1
 echo "Задание №1"
 gcc -o seq sequential_min_max.c find_min_max.c utils.c
-./seq 2 8 4
+./seq --seed "2" --array_size "8" --pnum "4" -f
 
 # end
 echo "Конец"
