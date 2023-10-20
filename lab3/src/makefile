@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-I. # для подключения библиотек
 
-objects = start sequential parallel	# 1
+objects = start_m sequential_m parallel_m	# 1
 
 all: $(objects)	# 1
 
