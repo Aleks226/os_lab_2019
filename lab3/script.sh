@@ -3,9 +3,7 @@ cd lab3/src
 
 # 1
 echo "Задание №1"
-cd src
 gcc -o FindMinMax find_min_max.c find_min_max.h utils.h
-./src
 
 # end
 echo "Конец"
