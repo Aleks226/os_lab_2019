@@ -2,18 +2,18 @@ clear
 cd lab3/src
 
 # 1
-echo "\nЗадание №1"
+echo "Задание №1"
 gcc -o seq sequential_min_max.c find_min_max.c utils.c
 ./seq 2 8
 
 # 2-3
-echo "\nЗадание №2-3"
+echo "Задание №2-3"
 gcc -o parralel parallel_min_max.c find_min_max.c utils.c
 ./parralel --seed "2" --array_size "8" --pnum "4"
 ./parallel --seed "2" --array_size "8" --pnum "4" -f
 
 # end
-echo "\nКонец"
+echo "Конец"
 cd ..
 git add ./src/find_min_max.c
 git add ./src/parallel_min_max.c
