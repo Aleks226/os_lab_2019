@@ -21,7 +21,7 @@ make all
 # 5
 echo "Задание №5"
 ./start_m --seed "2" --array_size "8"
-make clean
+#make clean
 
 # end
 echo "Конец"
