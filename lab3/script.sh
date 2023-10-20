@@ -7,6 +7,7 @@ gcc -o seq sequential_min_max.c find_min_max.c utils.c
 ./seq 2 8
 
 # 2-3
+echo "Задание №2-3"
 gcc -o parralel parallel_min_max.c find_min_max.c utils.c
 ./parralel --seed "2" --array_size "8" --pnum "4"
 ./parallel --seed "2" --array_size "8" --pnum "4" -f
