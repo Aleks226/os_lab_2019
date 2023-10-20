@@ -3,14 +3,24 @@ cd lab3/src
 
 # 1
 echo "Задание №1"
-gcc -o seq sequential_min_max.c find_min_max.c utils.c
-./seq 2 8
+gcc -o sequential_1 sequential_min_max.c find_min_max.c utils.c
+./sequential_1 2 8
 
 # 2-3
 echo "Задание №2-3"
-gcc -o parallel parallel_min_max.c find_min_max.c utils.c
-./parallel --seed "2" --array_size "8" --pnum "4"
-./parallel --seed "2" --array_size "8" --pnum "4" -f
+gcc -o parallel_23 parallel_min_max.c find_min_max.c utils.c
+./parallel_23 --seed "2" --array_size "8" --pnum "4"
+./parallel_23 --seed "2" --array_size "8" --pnum "4" -f
+
+# 4
+echo "Задание №4"
+make all
+./sequential_m 2 8
+./parallel_m --seed "2" --array_size "8" --pnum "4"
+
+# 5
+echo "Задание №5"
+./parallel_m --seed "2" --array_size "8" --pnum "4" --timeout 10
 
 # end
 echo "Конец"
