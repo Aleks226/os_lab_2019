@@ -21,7 +21,7 @@ make all
 # 5
 echo "Задание №5"
 ./start_m 2 8
-make clean
+#make clean
 
 # end
 echo "Конец"
