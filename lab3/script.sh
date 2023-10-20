@@ -20,7 +20,7 @@ make all
 
 # 5
 echo "Задание №5"
-./parallel_m --seed "2" --array_size "8" --pnum "4" --time 10
+./parallel_m --seed "2" --array_size "8" --pnum "4"
 
 # end
 echo "Конец"
