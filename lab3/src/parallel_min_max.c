@@ -183,7 +183,7 @@ int main(int argc, char **argv) {
     if (with_files) {
       // read from files
       fscanf(fp,"%d %d",&max,&min);      // 2
-      printf("Max_read: %d Min_read: %d\n", max, min);;
+      printf("Max_read: %d Min_read: %d\n", max, min);
     } else {
       // read from pipes
       read(pipefd[0], &max, 4);      // 4
