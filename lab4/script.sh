@@ -8,6 +8,7 @@ gcc -c sumfunc.c -o ./bin/sumfunc.o
 ar rcs ./bin/libsum.a ./bin/sumfunc.o
 make all
 ./parallel --seed 2 --array_size 8 --pnum 4 --time 10
+./process_memory
 ./psum  --seed 1 --array_size 1 --threads_num 1
 make clean
 
