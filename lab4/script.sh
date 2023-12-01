@@ -19,7 +19,10 @@ echo "Задание №5"
 echo "Конец"
 cd ..
 git add ./src/makefile
+git add ./src/sumfunc.c
+git add ./src/sumfunc.h
+git add ./src/parallel_sum.c
 git add ./script.sh
-git commit -m "добавлен makefile"
+git commit -m "добавлен makefile, sumfunc.c, sumfunc.h и изменён parallel_sum.c"
 git push
 cd ..
