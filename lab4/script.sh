@@ -13,6 +13,8 @@ echo "Задание №1"
 
 # 2
 echo "Задание №2"
+gcc -o zombie zombie.c
+./zombie
 
 # 3
 echo "Задание №3"
