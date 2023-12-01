@@ -1,26 +1,22 @@
-#include <sys/wait.h>  
-#include <stdlib.h>  
 #include <stdio.h>
-#include <unistd.h>  
-  
-int main(void)  
-{  
-    pid_t pids[10];  
-    int i;  
-  
-    for (i = 9; i >= 0; --i) {  
-        pids[i] = fork();  
-        if (pids[i] == 0) {  
-            printf("Child%d\n", i);  
-            sleep(i+1);  
-            _exit(0);  
-        }  
-    }  
-  
-    for (i = 9; i >= 0; --i) {  
-        printf("parent%d\n", i);  
-        waitpid(pids[i], NULL, 0);  
-    }  
-  
-    return 0;  
-}  
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main ()
+{
+    int count=0;
+    for(int i=0;i<6;i++){
+        pid_t child_pid = fork ();
+        if (child_pid == 0) {
+            printf("GoodBye my son");
+            exit (0);
+        }
+        else {
+            sleep (5);
+            count++;
+        }
+    }
+    printf("No, father %d",count);
+    return 0;
+}
