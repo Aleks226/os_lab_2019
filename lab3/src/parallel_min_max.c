@@ -146,10 +146,10 @@ int main(int argc, char **argv) {
           fprintf(fp, "%d %d\n", min_max.max,min_max.min);          // 1
         } else {
           // use pipe here
-          //close(pipefd[0]);          // 4
+          close(pipefd[0]);          // 4
           write(pipefd[1], &min_max.max, sizeof(min_max.max));
           write(pipefd[1], &min_max.min, sizeof(min_max.min));
-          close(pipefd[1]);
+          //close(pipefd[1]);
         }
         return 0;
       }
