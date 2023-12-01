@@ -36,6 +36,6 @@ git add ./src/parallel_sum.c
 git add ./src/process_memory.c
 git add ./src/zombie.c
 git add ./script.sh
-git commit -m "добавлен makefile, sumfunc.c, sumfunc.h и изменён parallel_sum.c"
+git commit -m "добавлен makefile, sumfunc.c, sumfunc.h, zombie.c и изменён parallel_sum.c"
 git push
 cd ..
