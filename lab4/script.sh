@@ -4,7 +4,7 @@ cd lab4/src
 # 1
 echo "Задание №1-3"
 make all
-./parallel --seed "2" --array_size "8" --pnum "4" --timeout "10"
+./parallel --seed "2" --array_size "8" --pnum "4" --time "10"
 make clean
 
 # 4
