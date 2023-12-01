@@ -10,7 +10,7 @@ make all
 
 # 1
 echo "Задание №1"
-
+./start
 make clean
 
 
