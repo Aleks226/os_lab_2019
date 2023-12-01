@@ -9,7 +9,7 @@ make all
 
 # 1
 echo "Задание №1"
-./parallel --seed 2 --array_size 8 --pnum 8 --time 1
+./parallel --seed 2 --array_size 8 --pnum 8 --time 10
 
 # 2
 echo "Задание №2"
