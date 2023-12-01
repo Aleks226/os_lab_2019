@@ -19,7 +19,7 @@ echo "Задание №2"
 
 # 3
 echo "Задание №3"
-
+#./deadlock
 make clean
 
 
