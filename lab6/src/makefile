@@ -15,7 +15,7 @@ start_servers:
 	./server --port 20001 --tnum 5 &
 	./server --port 20002 --tnum 5 &
 start:
-	./client --k 10 --mod 19 --servers /serv
+	./client --k 10 --mod 4 --servers /serv
 
 server.o : 
 	$(CC) -o server.o -c server.c $(CFLAGS)
