@@ -8,9 +8,6 @@ gcc -c multmodulo.c -o bin/static/multmodulo.o
 ar rcs bin/static/libmult.a bin/static/multmodulo.o
 make all
 
-gcc client.o -Lbin/static -lmult -o cli
-gcc server.o -Lbin/static -lmult -o serv
-
 make clean
 
 
