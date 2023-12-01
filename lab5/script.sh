@@ -17,6 +17,9 @@ gcc -o with_mutex with_mutex.c -pthread
 echo "Задание №2"
 ./fact  --k 10 --pnum 4 --mod 10
 
+# 3
+echo "Задание №3"
+
 make clean
 
 
