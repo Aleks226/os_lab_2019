@@ -1,12 +1,6 @@
 clear
 cd lab7/src
 
-echo "Запуск makefile"
-make all
-
-make clean
-
-
 # end
 echo "Конец"
 cd ..
