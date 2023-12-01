@@ -2,20 +2,14 @@ clear
 cd lab4/src
 
 # 1
-echo "Задание №1-3"
+echo "Задание №1-5"
 mkdir bin
 gcc -c sumfunc.c -o ./bin/sumfunc.o
 ar rcs ./bin/libsum.a ./bin/sumfunc.o
 make all
-./parallel --seed "2" --array_size "8" --pnum "4" --time "10"
+./parallel --seed 2 --array_size 8 --pnum 4 --time 10
+./sum  --seed 1 --array_size 1 --threads_num 1
 make clean
-
-# 4
-echo "Задание №4"
-
-
-# 5
-echo "Задание №5"
 
 
 # end
