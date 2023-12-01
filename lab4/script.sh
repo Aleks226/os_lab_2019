@@ -3,6 +3,7 @@ cd lab4/src
 
 # 1
 echo "Задание №1-3"
+mkdir bin
 gcc -c sumfunc.c -o ./bin/sumfunc.o
 ar rcs ./bin/libsum.a ./bin/sumfunc.o
 make all
