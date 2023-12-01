@@ -12,7 +12,7 @@ parallel : utils.o find_min_max.o ../../lab3/src/utils.h ../../lab3/src/find_min
 	$(CC) -o parallel utils.o find_min_max.o ../../lab3/src/parallel_min_max.c $(CFLAGS)
 
 psum : ../../lab3/src/utils.h utils.o sum.o
-	$(CC) sum.o utils.o -L../bin -lsum -o psum -pthread $(CFLAGS)
+	$(CC) sum.o utils.o -Lbin -lsum -o psum -pthread $(CFLAGS)
 
 sum.o : 
 	$(CC) -o sum.o -c parallel_sum.c -pthread $(CFLAGS)
