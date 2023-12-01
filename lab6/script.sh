@@ -7,9 +7,6 @@ mkdir bin/static
 gcc -c multmodulo.c -o bin/static/multmodulo.o
 ar rcs bin/static/libmult.a bin/static/multmodulo.o
 make all
-
-# 1
-echo "Задание №1"
 make clean
 
 
@@ -22,6 +19,6 @@ git add ./src/server.c
 git add ./src/multmodulo.c
 git add ./src/multmodulo.h
 git add ./script.sh
-git commit -m "добавлен makefile,  изменены client.c, server.c"
+git commit -m "добавлен makefile, multmodulo.c, multmodulo.h изменены client.c, server.c"
 git push
 cd ..
