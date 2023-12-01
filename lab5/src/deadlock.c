@@ -11,15 +11,14 @@ void *resource1(){
     printf("Job started in resource1..\n");
     sleep(2);
 
-    printf("Trying to get resourc2\n");
+    printf("Trying to get resource2\n");
+    
     pthread_mutex_lock(&lock2); 
-    printf("Aquired resourc2\n");
+    printf("Aquired resource2\n");
     pthread_mutex_unlock(&lock2);
 
     printf("Job finished in resource1..\n");
-
     pthread_mutex_unlock(&lock1);
-
     pthread_exit(NULL);
 
 }
