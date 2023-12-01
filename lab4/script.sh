@@ -3,8 +3,8 @@ cd lab4/src
 
 # 1
 echo "Задание №1-3"
-gcc -c sumfunc.c -o bin/sumfunc.o
-ar rcs bin/libsum.a bin/sumfunc.o
+gcc -c sumfunc.c -o ./bin/sumfunc.o
+ar rcs ./bin/libsum.a ./bin/sumfunc.o
 make all
 ./parallel --seed "2" --array_size "8" --pnum "4" --time "10"
 make clean
