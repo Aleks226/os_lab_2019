@@ -1,6 +1,10 @@
 clear
 cd lab8
 
+echo "Задание"
+gcc -o mutexAssembler mutexAssembler.c -pthread
+#./mutexAssembler
+
 # end
 echo "Конец"
 cd ..
